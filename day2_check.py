@@ -1,7 +1,7 @@
 import os
 
 # Updated path - dataset is on your Desktop
-dataset_path = r"C:\Users\user\OneDrive\Desktop\ISL_project"
+dataset_path = r"C:\Users\user\OneDrive\Desktop\projects frontend\ipd\ISL-TO-TEXT"
 
 print("=== Dataset Check ===\n")
 

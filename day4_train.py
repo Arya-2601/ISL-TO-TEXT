@@ -9,7 +9,7 @@ import pickle
 print("Loading data...", flush=True)
 
 # Load CSV
-df = pd.read_csv(r"C:\Users\user\OneDrive\Desktop\ISL_project\isl_keypoints.csv")
+df = pd.read_csv(r"C:\Users\user\OneDrive\Desktop\ISL_project\isl_angles.csv")
 
 # Split features and labels
 X = df.drop('label', axis=1).values
@@ -39,7 +39,7 @@ print("\nPer-letter accuracy:", flush=True)
 print(classification_report(y_test, y_pred), flush=True)
 
 # Save the model
-model_path = r"C:\Users\user\OneDrive\Desktop\ISL_project\isl_model.pkl"
+model_path = r"C:\Users\user\OneDrive\Desktop\projects frontend\ipd\ISL-TO-TEXT\isl_angles_model.pkl"
 with open(model_path, 'wb') as f:
     pickle.dump(model, f)
 
